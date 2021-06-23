@@ -36,6 +36,7 @@ public abstract class Downloader {
             }
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("The URL contains invalid symbols");
         } finally {
             try {
                 Objects.requireNonNull(is).close();
